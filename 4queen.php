@@ -21,7 +21,9 @@
 
         public function main(){
 
-            do{
+            $this::evaluation();
+
+            while(terminationCondition()){
 
                 $this::selection();
 
@@ -31,7 +33,7 @@
 
                 $this::evaluation();
 
-            }while(terminationCondition());
+            }
 
         }
 
